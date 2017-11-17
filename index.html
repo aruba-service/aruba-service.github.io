@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>aruba</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto+Mono'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  
+<div id="app">
+  <div class="slcts"><img src="https://my.mixtape.moe/pchgdl.svg"/><img src="https://my.mixtape.moe/lofqqg.svg"/>
+    <select v-model="nf">
+      <option value="0">auswählen</option>
+      <option value="1">30 Tage</option>
+      <option value="2">90 Tage</option>
+      <option value="3">180 Tage</option>
+      <option value="4">360 Tage</option>
+    </select>
+    <select v-model="sf">
+      <option value="0">auswählen</option>
+      <option value="1">30 Tage</option>
+      <option value="2">90 Tage</option>
+      <option value="3">180 Tage</option>
+      <option value="4">360 Tage</option>
+    </select>
+    <h2>{{ nf * 3 }}€</h2>
+    <h2>{{ sf * 3 }}€</h2>
+  </div>
+  <h2 class="p">Preis {{ price }}€</h2>
+  <div class="br"> </div>
+  <h1>Paypal</h1>
+  <p>Betreff: SF{{ sf }}NF{{ nf }}</p>
+  <p>Mail: fernandofleming33@gmail.com</p>
+  <p>Die Lieferzeit beträgt maximal 24 Stunden</p>
+  <p>Füg dem Betreff deine Telefonnumer an, um die Anmeldedaten per WhatsApp geschickt zu bekommen.</p>
+  <h1>Kontakt</h1>
+  <p>Telefonnummer: +31 97005032644</p>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
+</html>

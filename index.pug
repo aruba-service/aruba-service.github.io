@@ -1,0 +1,34 @@
+#app
+	.slcts
+			img(src="https://my.mixtape.moe/pchgdl.svg")
+			img(src="https://my.mixtape.moe/lofqqg.svg")
+	
+			select(v-model="nf")
+				option(value="0") auswählen
+				option(value="1") 30 Tage
+				option(value="2") 90 Tage
+				option(value="3") 180 Tage
+				option(value="4") 360 Tage
+			select(v-model="sf")
+				option(value="0") auswählen
+				option(value="1") 30 Tage
+				option(value="2") 90 Tage
+				option(value="3") 180 Tage
+				option(value="4") 360 Tage
+				
+			h2 {{ nf * 3 }}€
+			h2 {{ sf * 3 }}€
+	h2.p Preis {{ price }}€
+	
+	.br 
+	
+	h1 Paypal
+	p Betreff: SF{{ sf }}NF{{ nf }}
+	p Mail: fernandofleming33@gmail.com
+	p Die Lieferzeit beträgt maximal 24 Stunden
+	p Füg dem Betreff deine Telefonnumer an, um die Anmeldedaten per WhatsApp geschickt zu bekommen.
+	
+	h1 Kontakt
+	p Telefonnummer: +31 97005032644
+	
+	
